@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Juego Memoria</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Juego Memoria</h2>
+        <div class="game"></div>
+        <button class="reset" onclick="reset()">Reiniciar</button>
+    </div>
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/app-min.js"></script>
+    <script>
+        const reset = () => {
+            window.location.reload();
+        };  
+    </script>
+</body>
+
+</html>
