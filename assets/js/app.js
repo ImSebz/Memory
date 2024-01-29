@@ -39,13 +39,12 @@ for (let i = 0; i < imagesOpen.length; i++) {
 const items = document.querySelectorAll('.item');
 
 items.forEach((item, index) => {
-    const percentage = 1 - index / (items.length - 1);
-    const redIntensity = Math.round(135 - percentage * 30); // Adjust the red intensity
-    const greenIntensity = Math.round(206 - percentage * 50); // Adjust the green intensity
-    const blueIntensity = Math.round(500 - percentage * 30); // Adjust the blue intensity
+    const percentage = 1 - index / (items.length - 1); // Reverse the gradient
+    const redIntensity = Math.round(112 - percentage * 50); // Decrease the red intensity
+    const greenIntensity = Math.round(219 - percentage * 50); // Decrease the green intensity
+    const blueIntensity = Math.round(219 + percentage * (255 - 219)); // Increase the blue intensity
     item.style.setProperty('--item-bg-color', `rgb(${redIntensity}, ${greenIntensity}, ${blueIntensity})`);
 });
-
 
 const gameLogic = () => {
 
@@ -60,7 +59,7 @@ const gameLogic = () => {
                 boxOpen[1].classList.remove('boxOpen');
                 boxOpen[0].classList.remove('boxOpen');
 
-                if (document.querySelectorAll('.boxMatch').length === emojis.length) {
+                if (document.querySelectorAll('.boxMatch').length === ima.length) {
                     alert('Ganaste');
                     // setTimeout(() => {
                     //     resetWindow();
