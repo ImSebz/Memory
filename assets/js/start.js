@@ -3,4 +3,4 @@ btnJugar.disabled = true;
 
 setTimeout(function() {
     btnJugar.disabled = false;
-}, 95000);
+}, 90000);
