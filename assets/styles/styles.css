@@ -162,7 +162,7 @@ body {
     cursor: not-allowed;
 }
 
-@media screen and (min-width: 1080px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1920px) {
+@media screen and (min-width: 800px) and (max-width: 2200px) and (min-height: 1080px) and (max-height: 2220px) {
 
     .container {
         width: 100%;
