@@ -63,7 +63,7 @@ const gameLogic = () => {
                     alert('Ganaste');
                     setTimeout(() => {
                         window.location.href = "index.html";
-                    }, 1500);
+                    }, 3000);
                 }
             } else {
                 boxOpen[1].classList.remove('boxOpen');
