@@ -1,93 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #212222;
+    background: #b9b6b3;
 }
 
 .container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
-    background: #474d4b;
-    padding: 40px 80px;
+    gap: 10px;
+    background: #ffffff;
+    padding: 50px 50px;
+    border-top: 8px solid #ff7b00;
+    border-bottom: 16px solid #ff7b00;
+    width: 500px;
+    height: 100%;
+    min-height: 100vh;
+    
 }
 
-h2 {
-    font-size: 3em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.container img {
+    width: 100%;
+    max-width: 200px; 
+    padding: 0;
+    margin-bottom: 30px;
+
 }
 
-.reset {
+/* .reset {
     padding: 15px 20px;
-    color: #000000;
-    background: #fff;
+    color: #fff;
+    background: #102496;
     border: none;
     font-size: 1.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
-}
+} */
 
-.reset:focus {
+/* .reset:focus {
     outline: none;
     color: #fff;
     background: #000000;
-}
+} */
 
 .game {
     width: 430px;
-    height: 430px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
     gap: 10px;
-    transform-style: preserve-3d; 
-    perspective: 500px;
 }
 
-.item {
-    position: relative;
-    width: 23.25%;
-    height: 23.25%;
-    background: #fff;
+/* .buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 20px;
+} */
+
+.item {
+    counter-increment: item;
+    width: calc(25% - 10px);
+    height: 100px;
+    background: #fff;
+    display: flex;
+    justify-content: center;    
     align-items: center;
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+
+.item img {
+    position: relative;
+    margin-top: 30px;
+    width: 95%;
+    height: 95%;
+    
 }
 
 .item.boxOpen {
     transform: rotateY(0deg);
+    border-radius: 20%;
 }
 
-.item::after{
-    content: '';
+.item::after {
+    content: counter(item);
+    font-size: 28px;
     position: absolute;
     inset: 0;
-    background: #aca9a9;
+    background: #000000;    
     transition: 0.25s;
-    transform: rotateY(0deg);
+    transform: rotateY(0deg) scale(-1, 1);
     backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: #fff;
+    border-radius: 25%;
+    background: var(--item-bg-color);
 
 }
 
-.boxOpen::after, .boxMatch::after {
+.boxOpen::after,
+.boxMatch::after {
     transform: rotateY(180deg);
 }
 
+.boxMatch {
+    transform: rotateY(180deg) scale(-1,1);
+}
