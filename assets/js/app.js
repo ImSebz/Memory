@@ -59,11 +59,11 @@ const gameLogic = () => {
                 boxOpen[1].classList.remove('boxOpen');
                 boxOpen[0].classList.remove('boxOpen');
 
-                if (document.querySelectorAll('.boxMatch').length === ima.length) {
+                if (document.querySelectorAll('.boxMatch').length === imagesOpen.length) {
                     alert('Ganaste');
-                    // setTimeout(() => {
-                    //     resetWindow();
-                    // }, 800);
+                    setTimeout(() => {
+                        window.location.href = "index.html";
+                    }, 1500);
                 }
             } else {
                 boxOpen[1].classList.remove('boxOpen');
