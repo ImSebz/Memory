@@ -62,18 +62,13 @@ const appModule = (() => {
                     if (document.querySelectorAll('.boxMatch').length === imagesOpen.length) {
                         const modal = document.getElementById("myModal");
                         const iframe = document.getElementById("popupFrame");
-                        iframe.src = "pop.html"; // Set the source of the iframe
-                        modal.style.display = "block"; // Show the modal
+                        iframe.src = "pop.html"; // Pone el contenido del iframe
+                        modal.style.display = "block"; // muestra el modal
 
-                        let span = document.getElementsByClassName("close")[0];
-                        span.onclick = function () {
-                            modal.style.display = "none";
-                            window.location.href = "index.html"; // Redirect after closing the modal
-                        }
-
+                        // Cierra el modal despues de 7 segundos
                         setTimeout(() => {
                             modal.style.display = "none";
-                            window.location.href = "index.html"; // Redirect after a delay
+                            window.location.href = "index.html"; // Redirecciona a la pagina principal
                         }, 7000);
                     }
                 } else {
