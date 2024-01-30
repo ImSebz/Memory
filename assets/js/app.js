@@ -36,6 +36,8 @@ const appModule = (() => {
     //     window.location.reload();
     // };
 
+    //Item
+
     const items = document.querySelectorAll('.item');
 
     items.forEach((item, index) => {
