@@ -1,0 +1,20 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore the dist directory
+memory-openenglish-win32-x64/
+
+# Ignore all log files
+*.log
+
+# Ignore the .env file if you have one
+.env
+
+# Ignore the build directory
+/dist
+
+# Ignore the .exe files
+*.exe
+
+# Ignore the .exe files
+*.rar

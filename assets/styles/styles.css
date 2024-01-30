@@ -164,6 +164,40 @@ body {
 
 /** PopUp **/
 
+.info-pop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-pop {
+    background-color: #e25d20;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.text-pop {
+    font-size: 30px;
+    width: 300px;
+    color: #000;
+    text-align: center;
+    border-left: solid 10px #0078ff;
+    border-right: solid 10px #0078ff;
+    border-bottom: solid 10px #0078ff;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.img-open-pop {
+    width: 300px;
+    margin-bottom: 100px;
+}
+
 /** Modal **/
 .modal {
     display: none;

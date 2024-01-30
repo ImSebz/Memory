@@ -71,7 +71,7 @@ const appModule = (() => {
                         setTimeout(() => {
                             modal.style.display = "none";
                             window.location.href = "index.html"; // Redirecciona a la pagina principal
-                        }, 7000);
+                        }, 700000);
                     }
                 } else {
                     boxOpen[1].classList.remove('boxOpen');
