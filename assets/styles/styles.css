@@ -335,17 +335,17 @@ body {
 
     .top-pop {
         background-color: #e25d20;
-        width: 70%;
+        width: 600px;
         text-align: center;
         color: #fff;
-        font-size: 90px;
+        font-size: 70px;
         padding: 10px;
         border-radius: 30px;
     }
 
     .text-pop {
-        font-size: 75px;
-        width: 70%;
+        font-size: 60px;
+        width: 650px;
         color: #000;
         text-align: center;
         border-left: solid 10px #0078ff;
@@ -357,7 +357,7 @@ body {
 
     .img-open-pop {
         width: 700px;
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 
 }
